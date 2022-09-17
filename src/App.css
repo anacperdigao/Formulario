@@ -1,1 +1,5 @@
-
+.App {
+  background-image: url('../public/imagens/bg-main-desktop.png');
+  height: 100vh;
+  background-repeat: no-repeat;
+}
