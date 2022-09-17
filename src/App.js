@@ -1,4 +1,6 @@
 import './App.css';
+import CampoTexto from './componentes/CampoTexto';
+import Formulario from './componentes/Formulario';
 
 function App() {
   return (
@@ -8,7 +10,7 @@ function App() {
       </section>
       
       <section className='container__formulario'>
-        <p>formulario</p>
+        <Formulario />
       </section>
     </div>
   );

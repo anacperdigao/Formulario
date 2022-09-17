@@ -1,0 +1,16 @@
+.campo-texto{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.campo-texto label{
+    margin-bottom: 5px ;
+    font-size: 14px;
+}
+
+.campo-texto input{
+    padding: 10px 20px;
+    width: 50%;
+    border-radius: 10px;
+}
