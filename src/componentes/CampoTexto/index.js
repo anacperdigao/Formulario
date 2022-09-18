@@ -10,6 +10,7 @@ const CampoTexto = (props) => {
             required={props.obrigatorio} 
             placeholder={props.placeholder}
             type = {props.tipo}
+            style = {{width: props.tamanhoCampoTexto}}
             />
         </div>
     )

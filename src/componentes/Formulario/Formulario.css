@@ -1,4 +1,21 @@
 .formulario{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.campos-menores{
+    display: flex;
+    flex-direction: row;
+    width: 320px;
+    justify-content: space-between;
+}
+
+.data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 150px;
 }
