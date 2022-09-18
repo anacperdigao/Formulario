@@ -12,5 +12,14 @@
 .campo-texto input{
     padding: 10px 20px;
     width: 50%;
+    height: 40px;
     border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid hsl(278, 68%, 11%);
+    cursor: pointer;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;}
