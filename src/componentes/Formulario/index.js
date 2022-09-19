@@ -2,7 +2,7 @@ import Botao from '../Botao'
 import CampoTexto from '../CampoTexto'
 import './Formulario.css'
 
-const Formulario = (props) => {
+const Formulario = () => {
 
     return(
         <form className='formulario'>

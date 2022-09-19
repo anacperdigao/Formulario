@@ -1,12 +1,12 @@
 import './App.css';
-import CampoTexto from './componentes/CampoTexto';
+import CardFrente from './componentes/CardFrente';
 import Formulario from './componentes/Formulario';
 
 function App() {
   return (
     <div className="App">
       <section className='container__cards'>
-        <p>cards</p>
+        <CardFrente />
       </section>
       
       <section className='container__formulario'>
