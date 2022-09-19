@@ -6,6 +6,7 @@
   grid-template-columns: 40% 60%;
   padding: 50px;
   z-index: -10;
+  box-sizing: border-box;
 }
 
 

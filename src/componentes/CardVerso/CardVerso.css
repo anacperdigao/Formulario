@@ -1,0 +1,23 @@
+.cartao-verso{
+    background-image: url('C:\Users\anaca\formulario-cartao-credito\public\imagens\bg-card-back.png');
+    background-size: cover;
+    display: grid;
+    color: #ffffff;
+    position: absolute;
+    bottom: 60px;
+    left: 280px;
+    width: 395px;
+    height: 230px;
+    border-radius: 10px;
+    text-align: center;
+    align-content: space-evenly;
+    z-index: 100;
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+
+.cvc{
+    width: 360px; 
+    text-align: right;
+    height: 30px;
+}

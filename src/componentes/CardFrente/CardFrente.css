@@ -1,24 +1,27 @@
 .cartao-frente{
-    background-color: plum;
     background-image: url('C:\Users\anaca\formulario-cartao-credito\public\imagens\bg-card-front.png');
     background-size: cover;
     display: grid;
+    grid-template-rows: 35% 45% 20%;
     color: #ffffff;
     position: absolute;
-    top:100px;
-    left: 200px;
-    width: 320px;
-    height: 180px;
+    top: 60px;
+    left: 180px;
+    width: 395px;
+    height: 230px;
     border-radius: 10px;
     text-align: center;
     align-content: space-evenly;
     z-index: 100;
+    padding: 10px 0px;
+    box-sizing: border-box;
 }
 
 .cartao__frente_dados{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-self: center;
 }
 
 .validade{
@@ -29,4 +32,10 @@
 
 .logo_cartao{
     margin-left: 30px;
+    justify-self: left;
+    align-self: center;
+}
+
+.cartao__numero{
+    font-size: 30px;
 }

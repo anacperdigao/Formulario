@@ -1,5 +1,6 @@
 import './App.css';
 import CardFrente from './componentes/CardFrente';
+import CardVerso from './componentes/CardVerso';
 import Formulario from './componentes/Formulario';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <section className='container__cards'>
         <CardFrente />
+        <CardVerso />
       </section>
       
       <section className='container__formulario'>
