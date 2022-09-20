@@ -46,10 +46,12 @@ const Formulario = (props) => {
             label="Número do cartão" 
             obrigatorio={true} 
             placeholder="0000 0000 0000 0000"
-            tipo = "number"
+            tipo = "text"
             tamanhoCampoTexto = "320px"
             valor = {numeroCartao}
             aoAlterado = {valor => setNumeroCartao(valor)}
+            minimo = "16"
+            maximo = "16"
             />
 
             <div className='campos-menores'>
@@ -58,20 +60,24 @@ const Formulario = (props) => {
                     label="Expira em" 
                     obrigatorio={true} 
                     placeholder="MM"
-                    tipo = "number"
+                    tipo = "text"
                     tamanhoCampoTexto = "70px"
                     valor = {mes}
                     aoAlterado = {valor => setMes(valor)}
+                    minimo = "2"
+                    maximo = "2"
                     />
 
                     <CampoTexto 
                     label="(MM/AA)" 
                     obrigatorio={true} 
                     placeholder="AA"
-                    tipo = "number"
+                    tipo = "text"
                     tamanhoCampoTexto = "70px"
                     valor = {ano}
                     aoAlterado = {valor => setAno(valor)}
+                    minimo = "2"
+                    maximo = "2"
                     />
                 </div>
 
@@ -79,10 +85,12 @@ const Formulario = (props) => {
                 label="CVC" 
                 obrigatorio={true} 
                 placeholder="Ex.: 123"
-                tipo = "number"
+                tipo = "text"
                 tamanhoCampoTexto = "130px"
                 valor = {codigo}
                 aoAlterado = {valor => setCodigo(valor)}
+                minimo = "3"
+                maximo = "3"
                 />
             </div>
 

@@ -17,6 +17,8 @@ const CampoTexto = (props) => {
             placeholder={props.placeholder}
             type = {props.tipo}
             style = {{width: props.tamanhoCampoTexto}}
+            minLength = {props.minimo}
+            maxLength = {props.maximo}
             />
         </div>
     )

@@ -9,11 +9,6 @@ function App() {
 
   const [input, setInput] = useState([])
     //TESTE console.log(input)
-
-  const aoNovoCartaoCadastrado = (input) => {
-    setInput([input])
-    //TESTE console.log(input.nome)
-  }
   
   return (
     <div className="App">
@@ -38,7 +33,7 @@ function App() {
       </section>
       
       <section>
-        <Formulario aoCartaoCadastrado = {input => aoNovoCartaoCadastrado(input)}/>
+        <Formulario aoCartaoCadastrado = {input => setInput([input])}/>
       </section>
     
     </div>
