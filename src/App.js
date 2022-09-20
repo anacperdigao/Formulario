@@ -6,32 +6,39 @@ import Formulario from './componentes/Formulario';
 
 function App() {
   
+
   const [input, setInput] = useState([])
-    console.log(input)
+    //TESTE console.log(input)
 
   const aoNovoCartaoCadastrado = (input) => {
-    console.log(input.nome)
     setInput([input])
+    //TESTE console.log(input.nome)
   }
   
   return (
     <div className="App">
       
-      <section>
-        <CardFrente 
-          nome = {input.nome} 
-          numeroCartao = {input.numeroCartao} 
-          mes = {input.mes} 
-          ano = {input.ano}
-        />
+      <section>     
 
-        <CardVerso 
-          codigo = {input.codigo}
-        />
+      {input.map(input => 
+      <CardFrente 
+        key={input.nome} 
+        nome = {input.nome} 
+        numeroCartao = {input.numeroCartao} 
+        mes = {input.mes} 
+        ano = {input.ano}
+      />)}
+
+      {input.map(input => 
+      <CardVerso 
+        key={input.nome} 
+        codigo = {input.codigo} 
+      />)}
+
       </section>
       
       <section>
-        <Formulario aoCartaoCadastrado = {aoNovoCartaoCadastrado}/>
+        <Formulario aoCartaoCadastrado = {input => aoNovoCartaoCadastrado(input)}/>
       </section>
     
     </div>

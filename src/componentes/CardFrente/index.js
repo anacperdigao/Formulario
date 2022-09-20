@@ -1,6 +1,7 @@
 import './CardFrente.css'
 
 const CardFrente = (props) => {
+	console.log(props)
 
     return (
         <div className='cartao-frente'>
