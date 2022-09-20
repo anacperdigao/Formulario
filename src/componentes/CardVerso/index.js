@@ -1,6 +1,6 @@
 import './CardVerso.css'
 
-const CardVerso = (props) => {
+const CardVerso = (props) => { 
 
     return (
         <div className ="cartao-verso">
