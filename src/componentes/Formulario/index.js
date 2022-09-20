@@ -35,7 +35,7 @@ const Formulario = (props) => {
             <CampoTexto 
             label="Nome como está no cartão" 
             obrigatorio={true} 
-            placeholder="Ana C N Perdigão"
+            placeholder="ANA C N PERDIGÃO"
             tipo = "text" 
             tamanhoCampoTexto = "320px"
             valor = {nome}

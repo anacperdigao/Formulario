@@ -4,7 +4,7 @@ const CampoTexto = (props) => {
 
     const aoDigitado = (evento) => {
         //TESTE console.log(evento.target.value)
-        props.aoAlterado(evento.target.value)
+        props.aoAlterado(evento.target.value.toUpperCase())
     }
 
     return(
