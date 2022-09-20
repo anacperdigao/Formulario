@@ -1,10 +1,10 @@
 import './CardVerso.css'
 
-const CardVerso = () => {
+const CardVerso = (props) => {
 
     return (
         <div className ="cartao-verso">
-            <p className ="cvc" id="cartao__cvc">123</p>
+            <p className ="cvc" id="cartao__cvc">{props.codigo}</p>
         </div>
     )
 }
