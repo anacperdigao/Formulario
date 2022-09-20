@@ -14,21 +14,17 @@ function App() {
     <div className="App">
       
       <section>     
+ 
+      <CardFrente
+        nome = {input.map(input => input.nome)} 
+        numeroCartao = {input.map(input => input.numeroCartao)} 
+        mes = {input.map(input => input.mes)}
+        ano = {input.map(input => input.ano)}
+      />
 
-      {input.map(input => 
-      <CardFrente 
-        key={input.nome} 
-        nome = {input.nome} 
-        numeroCartao = {input.numeroCartao} 
-        mes = {input.mes} 
-        ano = {input.ano}
-      />)}
-
-      {input.map(input => 
       <CardVerso 
-        key={input.nome} 
-        codigo = {input.codigo} 
-      />)}
+        codigo = {input.map(input => input.codigo)}
+      />
 
       </section>
       
