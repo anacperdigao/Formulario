@@ -1,12 +1,13 @@
-import './CardVerso.css'
+import './CardVerso.css';
 
-const CardVerso = (props) => { 
+const CardVerso = (props) => {
+  return (
+    <div className="cartao-verso">
+      <p className="cvc" id="cartao__cvc">
+        {props.codigo}
+      </p>
+    </div>
+  );
+};
 
-    return (
-        <div className ="cartao-verso">
-            <p className ="cvc" id="cartao__cvc">{props.codigo}</p>
-        </div>
-    )
-}
-
-export default CardVerso
+export default CardVerso;
