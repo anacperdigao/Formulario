@@ -1,5 +1,5 @@
 .cartao-frente{
-    background-image: url('C:\Users\anaca\formulario-cartao-credito\public\imagens\bg-card-front.png');
+    background-image: url('/public/imagens/bg-card-front.png');
     background-size: cover;
     display: grid;
     grid-template-rows: 35% 45% 20%;
