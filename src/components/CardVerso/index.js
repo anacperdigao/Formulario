@@ -1,3 +1,6 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable react/prop-types */
+
 import './CardVerso.css';
 
 const CardVerso = ({ codigo }) => {
