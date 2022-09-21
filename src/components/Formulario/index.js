@@ -3,10 +3,9 @@
 
 import Botao from '../Botao';
 import CampoTexto from '../CampoTexto';
-
 import formValuesInitialState from '../../models/formValuesModel';
-
 import './Formulario.css';
+
 
 const Formulario = ({ formValues, setFormValues }) => {
   const { nome, numeroCartao, mes, ano, codigo } = formValues;
@@ -19,6 +18,7 @@ const Formulario = ({ formValues, setFormValues }) => {
     evento.preventDefault();
 
     setFormValues(formValuesInitialState);
+
   };
 
   return (
@@ -91,6 +91,7 @@ const Formulario = ({ formValues, setFormValues }) => {
       </div>
 
       <Botao>Cadastrar</Botao>
+
     </form>
   );
 };
