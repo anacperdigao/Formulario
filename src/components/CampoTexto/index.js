@@ -14,7 +14,6 @@ const CampoTexto = ({
   aoAlterado,
 }) => {
   const aoDigitado = ({ target: { name, value } }) => {
-    console.log(name, value);
     aoAlterado(name, value.toUpperCase());
   };
 

@@ -90,7 +90,7 @@ const Formulario = ({ formValues, setFormValues }) => {
         />
       </div>
 
-      <Botao>Confirmar</Botao>
+      <Botao>Cadastrar</Botao>
     </form>
   );
 };

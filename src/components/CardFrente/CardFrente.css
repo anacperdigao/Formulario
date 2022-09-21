@@ -4,9 +4,6 @@
     display: grid;
     grid-template-rows: 35% 45% 20%;
     color: #ffffff;
-    position: absolute;
-    top: 60px;
-    left: 160px;
     width: 420px;
     height: 230px;
     border-radius: 10px;

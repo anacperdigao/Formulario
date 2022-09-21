@@ -3,9 +3,6 @@
     background-size: cover;
     display: grid;
     color: #ffffff;
-    position: absolute;
-    bottom: 60px;
-    left: 250px;
     width: 420px;
     height: 230px;
     border-radius: 10px;
@@ -17,7 +14,7 @@
 }
 
 .cvc{
-    width: 360px; 
+    width: 360px;
     text-align: right;
     height: 30px;
 }

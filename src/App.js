@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      <section>
+      <section className="cards">
         <CardFrente formValues={formValues} />
 
         <CardVerso codigo={formValues.codigo} />

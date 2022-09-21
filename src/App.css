@@ -3,8 +3,16 @@
   height: 100vh;
   background-repeat: no-repeat;
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 42% 58%;
   padding: 50px;
   z-index: -10;
   box-sizing: border-box;
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 40px;
 }
