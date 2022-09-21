@@ -1,3 +1,6 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable react/prop-types */
+
 import Botao from '../Botao';
 import CampoTexto from '../CampoTexto';
 
