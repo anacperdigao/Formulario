@@ -1,5 +1,7 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable react/prop-types */
 import './Botao.css';
+
 
 const Botao = (props) => {
   return <button className="botao">{props.children}</button>;
