@@ -1,10 +1,7 @@
-/* eslint-disable react/prop-types */
-import P from 'prop-types';
 import './CardFrente.css';
 
 const CardFrente = ({ formValues }) => {
   const { nome, numeroCartao, mes, ano } = formValues;
-  //TESTE console.log(props)
 
   return (
     <div className="cartao-frente">
@@ -37,6 +34,3 @@ const CardFrente = ({ formValues }) => {
 
 export default CardFrente;
 
-CardFrente.PropTypes = {
-  formValues: P.object.isRequired,
-};

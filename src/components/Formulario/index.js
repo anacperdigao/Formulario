@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import Botao from '../Botao';
 import CampoTexto from '../CampoTexto';
 
@@ -8,11 +7,6 @@ import './Formulario.css';
 
 const Formulario = ({ formValues, setFormValues }) => {
   const { nome, numeroCartao, mes, ano, codigo } = formValues;
-  // const [nome, setNome] = useState('');
-  // const [numeroCartao, setNumeroCartao] = useState('');
-  // const [mes, setMes] = useState('');
-  // const [ano, setAno] = useState('');
-  // const [codigo, setCodigo] = useState('');
 
   const onChange = (name, value) => {
     setFormValues({ ...formValues, [name]: value });
@@ -20,22 +14,8 @@ const Formulario = ({ formValues, setFormValues }) => {
 
   const aoSalvar = (evento) => {
     evento.preventDefault();
-    //TESTE console.log(nome, numeroCartao, mes, ano, codigo)
-    // props.aoCartaoCadastrado({
-    //   nome,
-    //   numeroCartao,
-    //   mes,
-    //   ano,
-    //   codigo,
-    // });
-    setFormValues(formValuesInitialState);
 
-    //Aqui é só pra limpar o formulário
-    // setNome('');
-    // setNumeroCartao('');
-    // setMes('');
-    // setAno('');
-    // setCodigo('');
+    setFormValues(formValuesInitialState);
   };
 
   return (

@@ -5,7 +5,7 @@ import CardVerso from './components/CardVerso';
 import Formulario from './components/Formulario';
 
 function App() {
-  // const [input, setInput] = useState([]);
+
   const [formValues, setFormValues] = useState({
     nome: '',
     numeroCartao: '',
@@ -14,18 +14,6 @@ function App() {
     codigo: '',
   });
 
-  /*
-    input -> [
-      {
-      nome: ana,
-      numeroCartao: 123123123123,
-      mes: 12,
-      ano: 27,
-      codigo: 123,
-    }
-    ]
-  */
-  // nome = {input[0].nome}
 
   return (
     <div className="App">
