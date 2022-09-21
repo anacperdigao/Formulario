@@ -1,37 +1,43 @@
 import { useState } from 'react';
 import './App.css';
-import CardFrente from './componentes/CardFrente';
-import CardVerso from './componentes/CardVerso';
-import Formulario from './componentes/Formulario';
+import CardFrente from './components/CardFrente';
+import CardVerso from './components/CardVerso';
+import Formulario from './components/Formulario';
 
 function App() {
-  
+  // const [input, setInput] = useState([]);
+  const [formValues, setFormValues] = useState({
+    nome: '',
+    numeroCartao: '',
+    mes: '',
+    ano: '',
+    codigo: '',
+  });
 
-  const [input, setInput] = useState([])
-    //TESTE console.log(input)
-  
+  /*
+    input -> [
+      {
+      nome: ana,
+      numeroCartao: 123123123123,
+      mes: 12,
+      ano: 27,
+      codigo: 123,
+    }
+    ]
+  */
+  // nome = {input[0].nome}
+
   return (
     <div className="App">
-      
-      <section>     
- 
-      <CardFrente
-        nome = {input.map(input => input.nome)} 
-        numeroCartao = {input.map(input => input.numeroCartao)} 
-        mes = {input.map(input => input.mes)}
-        ano = {input.map(input => input.ano)}
-      />
-
-      <CardVerso 
-        codigo = {input.map(input => input.codigo)}
-      />
-
-      </section>
-      
       <section>
-        <Formulario aoCartaoCadastrado = {input => setInput([input])}/>
+        <CardFrente formValues={formValues} />
+
+        <CardVerso codigo={formValues.codigo} />
       </section>
-    
+
+      <section>
+        <Formulario formValues={formValues} setFormValues={setFormValues} />
+      </section>
     </div>
   );
 }
