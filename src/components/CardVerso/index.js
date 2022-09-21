@@ -1,10 +1,11 @@
 import './CardVerso.css';
 
-const CardVerso = (props) => {
+// eslint-disable-next-line react/prop-types
+const CardVerso = ({ codigo }) => {
   return (
     <div className="cartao-verso">
       <p className="cvc" id="cartao__cvc">
-        {props.codigo}
+        {codigo}
       </p>
     </div>
   );

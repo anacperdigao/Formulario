@@ -5,7 +5,7 @@ import CardVerso from './components/CardVerso';
 import Formulario from './components/Formulario';
 
 function App() {
-  const [input, setInput] = useState([]);
+  // const [input, setInput] = useState([]);
   const [formValues, setFormValues] = useState({
     nome: '',
     numeroCartao: '',
@@ -14,21 +14,29 @@ function App() {
     codigo: '',
   });
 
-  //TESTE console.log(input)
+  /*
+    input -> [
+      {
+      nome: ana,
+      numeroCartao: 123123123123,
+      mes: 12,
+      ano: 27,
+      codigo: 123,
+    }
+    ]
+  */
+  // nome = {input[0].nome}
 
   return (
     <div className="App">
       <section>
         <CardFrente formValues={formValues} />
 
-        <CardVerso codigo={input.map((input) => input.codigo)} />
+        <CardVerso codigo={formValues.codigo} />
       </section>
 
       <section>
-        <Formulario
-          aoCartaoCadastrado={(input) => setInput([input])}
-          setFormValues={setFormValues}
-        />
+        <Formulario formValues={formValues} setFormValues={setFormValues} />
       </section>
     </div>
   );

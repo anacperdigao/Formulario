@@ -1,6 +1,9 @@
+/* eslint-disable react/prop-types */
+import P from 'prop-types';
 import './CardFrente.css';
 
-const CardFrente = (props) => {
+const CardFrente = ({ formValues }) => {
+  const { nome, numeroCartao, mes, ano } = formValues;
   //TESTE console.log(props)
 
   return (
@@ -19,13 +22,13 @@ const CardFrente = (props) => {
           />
         </svg>
       </span>
-      <p className="cartao__numero">{props.numeroCartao}</p>
+      <p className="cartao__numero">{numeroCartao}</p>
       <div className="cartao__frente_dados">
-        <p className="cartao__nome">{props.nome}</p>
+        <p className="cartao__nome">{nome}</p>
         <div className="validade">
-          <p className="cartao__validade_mes">{props.mes}</p>
+          <p className="cartao__validade_mes">{mes}</p>
           <p>/</p>
-          <p className="cartao__validade_ano">{props.ano}</p>
+          <p className="cartao__validade_ano">{ano}</p>
         </div>
       </div>
     </div>
@@ -33,3 +36,7 @@ const CardFrente = (props) => {
 };
 
 export default CardFrente;
+
+CardFrente.PropTypes = {
+  formValues: P.object.isRequired,
+};

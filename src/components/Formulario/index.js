@@ -1,32 +1,41 @@
+/* eslint-disable react/prop-types */
 import Botao from '../Botao';
 import CampoTexto from '../CampoTexto';
-import './Formulario.css';
-import { useState } from 'react';
 
-const Formulario = (props) => {
-  const [nome, setNome] = useState('');
-  const [numeroCartao, setNumeroCartao] = useState('');
-  const [mes, setMes] = useState('');
-  const [ano, setAno] = useState('');
-  const [codigo, setCodigo] = useState('');
+import formValuesInitialState from '../../models/formValuesModel';
+
+import './Formulario.css';
+
+const Formulario = ({ formValues, setFormValues }) => {
+  const { nome, numeroCartao, mes, ano, codigo } = formValues;
+  // const [nome, setNome] = useState('');
+  // const [numeroCartao, setNumeroCartao] = useState('');
+  // const [mes, setMes] = useState('');
+  // const [ano, setAno] = useState('');
+  // const [codigo, setCodigo] = useState('');
+
+  const onChange = (name, value) => {
+    setFormValues({ ...formValues, [name]: value });
+  };
 
   const aoSalvar = (evento) => {
     evento.preventDefault();
     //TESTE console.log(nome, numeroCartao, mes, ano, codigo)
-    props.aoCartaoCadastrado({
-      nome,
-      numeroCartao,
-      mes,
-      ano,
-      codigo,
-    });
+    // props.aoCartaoCadastrado({
+    //   nome,
+    //   numeroCartao,
+    //   mes,
+    //   ano,
+    //   codigo,
+    // });
+    setFormValues(formValuesInitialState);
 
     //Aqui é só pra limpar o formulário
-    setNome('');
-    setNumeroCartao('');
-    setMes('');
-    setAno('');
-    setCodigo('');
+    // setNome('');
+    // setNumeroCartao('');
+    // setMes('');
+    // setAno('');
+    // setCodigo('');
   };
 
   return (
@@ -38,7 +47,8 @@ const Formulario = (props) => {
         tipo="text"
         tamanhoCampoTexto="320px"
         valor={nome}
-        aoAlterado={(valor) => setNome(valor)}
+        name="nome"
+        aoAlterado={onChange}
       />
 
       <CampoTexto
@@ -48,7 +58,8 @@ const Formulario = (props) => {
         tipo="text"
         tamanhoCampoTexto="320px"
         valor={numeroCartao}
-        aoAlterado={(valor) => setNumeroCartao(valor)}
+        name="numeroCartao"
+        aoAlterado={onChange}
         minimo="16"
         maximo="16"
       />
@@ -62,7 +73,8 @@ const Formulario = (props) => {
             tipo="text"
             tamanhoCampoTexto="70px"
             valor={mes}
-            aoAlterado={(valor) => setMes(valor)}
+            name="mes"
+            aoAlterado={onChange}
             minimo="2"
             maximo="2"
           />
@@ -74,7 +86,8 @@ const Formulario = (props) => {
             tipo="text"
             tamanhoCampoTexto="70px"
             valor={ano}
-            aoAlterado={(valor) => setAno(valor)}
+            name="ano"
+            aoAlterado={onChange}
             minimo="2"
             maximo="2"
           />
@@ -87,7 +100,8 @@ const Formulario = (props) => {
           tipo="text"
           tamanhoCampoTexto="130px"
           valor={codigo}
-          aoAlterado={(valor) => setCodigo(valor)}
+          name="codigo"
+          aoAlterado={onChange}
           minimo="3"
           maximo="3"
         />
