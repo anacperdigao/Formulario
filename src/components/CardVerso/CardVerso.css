@@ -18,3 +18,20 @@
     text-align: right;
     height: 30px;
 }
+
+@media screen and (max-width: 480px){
+  .cartao-verso{
+    width: 250px;
+    height: 150px;
+    background-position: center;
+    position: relative;
+    left: 30px;
+    z-index: 0;
+  }
+
+  .cvc{
+    width: 220px;
+    font-size: 14px;
+    height: 25px;
+  }
+}

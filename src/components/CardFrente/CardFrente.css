@@ -37,3 +37,27 @@
     font-size: 30px;
     letter-spacing: 0.07em;
 }
+
+@media screen and (max-width: 480px){
+  .cartao-frente{
+    width: 250px;
+    height: 150px;
+    position: relative;
+    right: 30px;
+    bottom: 60px;
+    z-index: 100;
+}
+
+  .cartao__frente_dados{
+      font-size: 12px;
+  }
+
+  .cartao__numero{
+      font-size: 18px;
+  }
+
+  .logo_cartao{
+    margin-left: 15px;
+}
+
+}

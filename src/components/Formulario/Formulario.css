@@ -19,3 +19,9 @@
     justify-content: space-between;
     width: 150px;
 }
+
+@media screen and (max-width: 480px){
+  .formulario{
+    margin-top: 0px;
+  }
+}

@@ -16,3 +16,22 @@
   align-items: flex-end;
   gap: 40px;
 }
+
+@media screen and (max-width: 480px){
+  .App {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 100vw;
+  }
+
+  .cards{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    position: relative;
+  }
+
+}
