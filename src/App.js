@@ -16,7 +16,7 @@ function App() {
     codigo: '',
   });
 
-  const aoFinalizado = false;
+  const [aoFinalizado, setAoFinalizado] = useState(true);
 
   return (
     <div className="App">
@@ -27,8 +27,8 @@ function App() {
 
       <section>
         {aoFinalizado
-        ? <Formulario formValues={formValues} setFormValues={setFormValues} />
-        : <CadastroFinalizado />}
+        ? <Formulario formValues={formValues} setFormValues={setFormValues} setAoFinalizado={setAoFinalizado}/>
+        : <CadastroFinalizado setAoFinalizado={setAoFinalizado} setFormValues={setFormValues}/>}
       </section>
 
     </div>

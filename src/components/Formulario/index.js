@@ -3,11 +3,10 @@
 
 import Botao from '../Botao';
 import CampoTexto from '../CampoTexto';
-import formValuesInitialState from '../../models/formValuesModel';
 import './Formulario.css';
 
 
-const Formulario = ({ formValues, setFormValues }) => {
+const Formulario = ({ formValues, setFormValues, setAoFinalizado }) => {
   const { nome, numeroCartao, mes, ano, codigo } = formValues;
 
   const onChange = (name, value) => {
@@ -16,8 +15,7 @@ const Formulario = ({ formValues, setFormValues }) => {
 
   const aoSalvar = (evento) => {
     evento.preventDefault();
-
-    setFormValues(formValuesInitialState);
+    setAoFinalizado(false);
 
   };
 
