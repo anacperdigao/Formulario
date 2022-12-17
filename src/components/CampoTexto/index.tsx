@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import React from 'react';
 import './CampoTexto.css';
 
 const CampoTexto = ({

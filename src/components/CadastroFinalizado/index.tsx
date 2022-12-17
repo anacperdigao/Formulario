@@ -1,7 +1,4 @@
-/* eslint-disable react/no-unknown-property */
-/* eslint-disable prettier/prettier */
-/* eslint-disable react/prop-types */
-
+import React from 'react';
 import Botao from '../Botao';
 import './CadastroFinalizado.css';
 import formValuesInitialState from '../../models/formValuesModel';

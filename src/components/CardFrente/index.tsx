@@ -1,6 +1,4 @@
-/* eslint-disable prettier/prettier */
-/* eslint-disable react/prop-types */
-
+import React from 'react';
 import './CardFrente.css';
 
 const CardFrente = ({ formValues }) => {
