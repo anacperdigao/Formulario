@@ -3,6 +3,7 @@ import Botao from '../Botao';
 import './CadastroFinalizado.css';
 import formValuesInitialState from '../../models/formValuesModel';
 
+
 const CadastroFinalizado = ({setAoFinalizado, setFormValues}) => {
 
   const aoFinalizar = (evento) => {
